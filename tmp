@@ -1,4 +1,5 @@
-No errors uploading 'oka_1.pkg'.
-RequestUUID = b7fbd3dc-ff83-42ca-9538-86abf98685f7
+2021-04-02 15:05:58.863 altool[14507:319607] CFURLRequestSetHTTPCookieStorageAcceptPolicy_block_invoke: no longer implemented and should not be called
+No errors uploading 'Notarization/Omi Mirror Audio Driver.pkg'.
+RequestUUID = 7c115cd6-0dd5-4187-8b7a-61d36e6472b7
 
 
