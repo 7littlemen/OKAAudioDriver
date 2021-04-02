@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D7477A81578168D00412279"
-               BuildableName = "Oka Mirror Audio Driver.driver"
+               BuildableName = "Omi Mirror Audio Driver.driver"
                BlueprintName = "BlackHole"
                ReferencedContainer = "container:BlackHole.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D7477A81578168D00412279"
-            BuildableName = "Oka Mirror Audio Driver.driver"
+            BuildableName = "Omi Mirror Audio Driver.driver"
             BlueprintName = "BlackHole"
             ReferencedContainer = "container:BlackHole.xcodeproj">
          </BuildableReference>
@@ -60,7 +60,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D7477A81578168D00412279"
-            BuildableName = "Oka Mirror Audio Driver.driver"
+            BuildableName = "Omi Mirror Audio Driver.driver"
             BlueprintName = "BlackHole"
             ReferencedContainer = "container:BlackHole.xcodeproj">
          </BuildableReference>

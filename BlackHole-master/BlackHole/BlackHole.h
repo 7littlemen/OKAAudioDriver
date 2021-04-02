@@ -118,17 +118,17 @@ enum
 //    multiple devices were supported, this state would need to be encapsulated in one or more structs
 //    so that each object's state can be tracked individually.
 //    Note also that we share a single mutex across all objects to be thread safe for the same reason.
-#define                             kPlugIn_BundleID                    "audio.existential.OkaMirrorAudioDriver"
+#define                             kPlugIn_BundleID                    "audio.existential.OmiMirrorAudioDriver"
 static pthread_mutex_t              gPlugIn_StateMutex                  = PTHREAD_MUTEX_INITIALIZER;
 static UInt32                       gPlugIn_RefCount                    = 0;
 static AudioServerPlugInHostRef     gPlugIn_Host                        = NULL;
 
-#define                             kBox_UID                            "OkaAudioDriver_UID"
+#define                             kBox_UID                            "OmiAudioDriver_UID"
 static CFStringRef                  gBox_Name                           = NULL;
 static Boolean                      gBox_Acquired                       = true;
 
-#define                             kDevice_UID                         "OkaAudioDriver_UID"
-#define                             kDevice_ModelUID                    "OkaAudioDriver_ModelUID"
+#define                             kDevice_UID                         "OmiAudioDriver_UID"
+#define                             kDevice_ModelUID                    "OmiAudioDriver_ModelUID"
 static pthread_mutex_t              gDevice_IOMutex                     = PTHREAD_MUTEX_INITIALIZER;
 static Float64                      gDevice_SampleRate                  = 48000.0;
 static UInt64                       gDevice_IOIsRunning                 = 0;
@@ -150,9 +150,9 @@ static bool                         gMute_Input_Master_Value            = false;
 static bool                         gMute_Output_Master_Value           = false;
 
 static const UInt32                 kDataSource_NumberItems             = 1;
-#define                             kDataSource_ItemNamePattern         "Oka Mirror Audio Driver"
+#define                             kDataSource_ItemNamePattern         "Omi Mirror Audio Driver"
 
-#define                             DEVICE_NAME                         "Oka Mirror Audio Driver"
+#define                             DEVICE_NAME                         "Omi Mirror Audio Driver"
 #define                             MANUFACTURER_NAME                   "Existential Audio Inc."
 
 static UInt32                       gDataSource_Input_Master_Value      = 0;

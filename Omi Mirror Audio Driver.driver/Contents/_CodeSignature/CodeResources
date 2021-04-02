@@ -6,15 +6,11 @@
 	<dict>
 		<key>Resources/BlackHole.png</key>
 		<data>
-		fBrEello+ftm+qYwUJ8fsuATvnM=
+		XOp31ltXxoXfEVtRoT4njS99Chs=
 		</data>
 		<key>Resources/CHANGELOG.md</key>
 		<data>
 		uT7SztTZ9E3X7j2ZFPJ0WGtk4gs=
-		</data>
-		<key>Resources/LICENSE</key>
-		<data>
-		MaPUYLs8fZiEUYfHFqMNuBxEthU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -23,11 +19,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fBrEello+ftm+qYwUJ8fsuATvnM=
+			XOp31ltXxoXfEVtRoT4njS99Chs=
 			</data>
 			<key>hash2</key>
 			<data>
-			gxl00huEZNl3BGUOZFtpPWJFE8T+VYIkc7IV9qAJjHA=
+			dGnZlyxh76QCKOiNZ3aoXSE1fVlXPE/ciTLyKC+bFvc=
 			</data>
 		</dict>
 		<key>Resources/CHANGELOG.md</key>
@@ -39,17 +35,6 @@
 			<key>hash2</key>
 			<data>
 			pDf3jZAwoeFlfyZkBp7mY/tLiOP9nrmQpbmT22bTOnQ=
-			</data>
-		</dict>
-		<key>Resources/LICENSE</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MaPUYLs8fZiEUYfHFqMNuBxEthU=
-			</data>
-			<key>hash2</key>
-			<data>
-			OXLcl0T2SZ8Pmy2/dmlvKuetivmyPd5m1q+Gyd+zaYY=
 			</data>
 		</dict>
 	</dict>

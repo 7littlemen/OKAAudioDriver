@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		039FF2582341B6E800400D7A /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 039FF2572341B6E800400D7A /* CHANGELOG.md */; };
-		03FDCADC233FAE0500101681 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 03FDCADB233FAE0500101681 /* LICENSE */; };
 		2D616EF415B8C82500D598BD /* BlackHole.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D616EF215B8C82500D598BD /* BlackHole.c */; };
 		2D7477AD1578168D00412279 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7477AC1578168D00412279 /* CoreFoundation.framework */; };
 		B07A47342446F48E00ACDE4E /* BlackHole.png in Resources */ = {isa = PBXBuildFile; fileRef = B07A47332446F48E00ACDE4E /* BlackHole.png */; };
@@ -16,11 +15,10 @@
 
 /* Begin PBXFileReference section */
 		039FF2572341B6E800400D7A /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
-		03FDCADB233FAE0500101681 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		03FEA4BB233D27770005D277 /* BlackHole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlackHole.h; sourceTree = "<group>"; };
 		2D616EF115B8C82500D598BD /* BlackHole-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BlackHole-Info.plist"; sourceTree = "<group>"; };
 		2D616EF215B8C82500D598BD /* BlackHole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BlackHole.c; sourceTree = "<group>"; };
-		2D7477A91578168D00412279 /* Oka Mirror Audio Driver.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Oka Mirror Audio Driver.driver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7477A91578168D00412279 /* Omi Mirror Audio Driver.driver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Omi Mirror Audio Driver.driver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7477AC1578168D00412279 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2D7477EC157823CF00412279 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		2DA8FA1515FEAAB000F04B50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				2DA8FA1515FEAAB000F04B50 /* README.md */,
-				03FDCADB233FAE0500101681 /* LICENSE */,
 				039FF2572341B6E800400D7A /* CHANGELOG.md */,
 				2D616EF015B8C82500D598BD /* BlackHole */,
 				2D7477AB1578168D00412279 /* Frameworks */,
@@ -67,7 +64,7 @@
 		2D7477AA1578168D00412279 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D7477A91578168D00412279 /* Oka Mirror Audio Driver.driver */,
+				2D7477A91578168D00412279 /* Omi Mirror Audio Driver.driver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,7 +97,7 @@
 			);
 			name = BlackHole;
 			productName = AudioNULLDriver;
-			productReference = 2D7477A91578168D00412279 /* Oka Mirror Audio Driver.driver */;
+			productReference = 2D7477A91578168D00412279 /* Omi Mirror Audio Driver.driver */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -112,7 +109,7 @@
 				LastUpgradeCheck = 1030;
 				TargetAttributes = {
 					2D7477A81578168D00412279 = {
-						DevelopmentTeam = 578V4P5TMW;
+						DevelopmentTeam = UFC6W2DD6Z;
 					};
 				};
 			};
@@ -140,7 +137,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B07A47342446F48E00ACDE4E /* BlackHole.png in Resources */,
-				03FDCADC233FAE0500101681 /* LICENSE in Resources */,
 				039FF2582341B6E800400D7A /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,7 +317,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEVELOPMENT_TEAM = 578V4P5TMW;
+				DEVELOPMENT_TEAM = UFC6W2DD6Z;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=0",
@@ -330,8 +326,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 0.2.6;
-				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.OkaMirrorAudioDriver;
-				PRODUCT_NAME = "Oka Mirror Audio Driver";
+				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.OmiMirrorAudioDriver;
+				PRODUCT_NAME = "Omi Mirror Audio Driver";
 				WRAPPER_EXTENSION = driver;
 			};
 			name = Release;
@@ -341,7 +337,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEVELOPMENT_TEAM = 578V4P5TMW;
+				DEVELOPMENT_TEAM = UFC6W2DD6Z;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=1",
@@ -350,8 +346,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 0.2.6;
-				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.OkaMirrorAudioDriver;
-				PRODUCT_NAME = "Oka Mirror Audio Driver";
+				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.OmiMirrorAudioDriver;
+				PRODUCT_NAME = "Omi Mirror Audio Driver";
 				WRAPPER_EXTENSION = driver;
 			};
 			name = Debug;
@@ -361,7 +357,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEVELOPMENT_TEAM = 578V4P5TMW;
+				DEVELOPMENT_TEAM = UFC6W2DD6Z;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=1",
@@ -370,8 +366,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Audio/Plug-Ins/HAL";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MARKETING_VERSION = 0.2.6;
-				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.OkaMirrorAudioDriver;
-				PRODUCT_NAME = "Oka Mirror Audio Driver";
+				PRODUCT_BUNDLE_IDENTIFIER = audio.existential.OmiMirrorAudioDriver;
+				PRODUCT_NAME = "Omi Mirror Audio Driver";
 				WRAPPER_EXTENSION = driver;
 			};
 			name = "Debug-Opt";

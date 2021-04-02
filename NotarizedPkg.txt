@@ -2,10 +2,13 @@
 //////////////////////////////////////////////////////////////////////////////////////////
 1.Codesign binary
 
-➜  Oka Mirror Audio Driver codesign -s "Developer ID Application: Chenghao Wu (UFC6W2DD6Z)" --timestamp -o runtime -f /Users/denny/Documents/Project/Oka\ Mirror\ Audio\ Driver/Oka\ Mirror\ Audio\ Driver.driver/Contents/MacOS/Oka\ Mirror\ Audio\ Driver
-/Users/denny/Documents/Project/Oka Mirror Audio Driver/Oka Mirror Audio Driver.driver/Contents/MacOS/Oka Mirror Audio Driver: replacing existing signature
-➜  Oka Mirror Audio Driver codesign -dvvv /Users/denny/Documents/Project/Oka\ Mirror\ Audio\ Driver/Oka\ Mirror\ Audio\ Driver.driver/Contents/MacOS/Oka\ Mirror\ Audio\ Driver
-Executable=/Users/denny/Documents/Project/Oka Mirror Audio Driver/Oka Mirror Audio Driver.driver/Contents/MacOS/Oka Mirror Audio Driver
+security find-identity
+
+
+➜  Omi Mirror Audio Driver codesign -s "Developer ID Application: Chenghao Wu (UFC6W2DD6Z)" --timestamp -o runtime -f /Users/denny/Documents/Project/Oka\ Mirror\ Audio\ Driver/Oka\ Mirror\ Audio\ Driver.driver/Contents/MacOS/Oka\ Mirror\ Audio\ Driver
+/Users/denny/Documents/Project/Omi Mirror Audio Driver/Omi Mirror Audio Driver.driver/Contents/MacOS/Omi Mirror Audio Driver: replacing existing signature
+➜  Omi Mirror Audio Driver codesign -dvvv /Users/denny/Documents/Project/Oka\ Mirror\ Audio\ Driver/Oka\ Mirror\ Audio\ Driver.driver/Contents/MacOS/Oka\ Mirror\ Audio\ Driver
+Executable=/Users/denny/Documents/Project/Omi Mirror Audio Driver/Omi Mirror Audio Driver.driver/Contents/MacOS/Omi Mirror Audio Driver
 Identifier=audio.existential.OkaMirrorAudioDriver
 Format=bundle with Mach-O thin (x86_64)
 CodeDirectory v=20500 size=530 flags=0x10000(runtime) hashes=9+3 location=embedded
@@ -42,14 +45,14 @@ Internal requirements count=1 size=200
 //////////////////////////////////////////////////////////////////////////////////////////
 2.Codesign pkg
 
-➜  Oka Mirror Audio Driver productsign --sign "Developer ID Installer: Chenghao Wu (UFC6W2DD6Z)" Oka\ Mirror\ Audio\ Driver.pkg Notarizition/Oka\ Mirror\ Audio\ Driver.pkg
+➜  Omi Mirror Audio Driver productsign --sign "Developer ID Installer: Chenghao Wu (UFC6W2DD6Z)" Oka\ Mirror\ Audio\ Driver.pkg Notarizition/Oka\ Mirror\ Audio\ Driver.pkg
 productsign: using timestamp authority for signature
 productsign: signing product with identity "Developer ID Installer: Chenghao Wu (UFC6W2DD6Z)" from keychain /Users/denny/Library/Keychains/login.keychain-db
 productsign: adding certificate "Developer ID Certification Authority"
 productsign: adding certificate "Apple Root CA"
-productsign: Wrote signed product archive to Notarizition/Oka Mirror Audio Driver.pkg
-➜  Oka Mirror Audio Driver pkgutil --check-signature /Users/denny/Documents/Project/Oka\ Mirror\ Audio\ Driver/Notarizition/Oka\ Mirror\ Audio\ Driver.pkg
-Package "Oka Mirror Audio Driver.pkg":
+productsign: Wrote signed product archive to Notarizition/Omi Mirror Audio Driver.pkg
+➜  Omi Mirror Audio Driver pkgutil --check-signature /Users/denny/Documents/Project/Oka\ Mirror\ Audio\ Driver/Notarizition/Oka\ Mirror\ Audio\ Driver.pkg
+Package "Omi Mirror Audio Driver.pkg":
    Status: signed by a developer certificate issued by Apple for distribution
    Signed with a trusted timestamp on: 2020-04-23 09:40:53 +0000
    Certificate Chain:
@@ -71,9 +74,9 @@ Package "Oka Mirror Audio Driver.pkg":
            B0 B1 73 0E CB C7 FF 45 05 14 2C 49 F1 29 5E 6E DA 6B CA ED 7E 2C
            68 C5 BE 91 B5 A1 10 01 F0 24
 
-➜  Oka Mirror Audio Driver cd Notarizition
+➜  Omi Mirror Audio Driver cd Notarizition
 ➜  Notarizition ls
-Oka Mirror Audio Driver.pkg
+Omi Mirror Audio Driver.pkg
 
 
 
@@ -95,8 +98,8 @@ Oka Mirror Audio Driver.pkg
 4.staple pkg
 
 ➜  Notarizition xcrun stapler staple Oka\ Mirror\ Audio\ Driver.pkg
-Processing: /Users/denny/Documents/Project/Oka Mirror Audio Driver/Notarizition/Oka Mirror Audio Driver.pkg
-Processing: /Users/denny/Documents/Project/Oka Mirror Audio Driver/Notarizition/Oka Mirror Audio Driver.pkg
+Processing: /Users/denny/Documents/Project/Omi Mirror Audio Driver/Notarizition/Omi Mirror Audio Driver.pkg
+Processing: /Users/denny/Documents/Project/Omi Mirror Audio Driver/Notarizition/Omi Mirror Audio Driver.pkg
 The staple and validate action worked!
 
 
@@ -110,7 +113,7 @@ The staple and validate action worked!
 5.check result
 
 ➜  Notarizition spctl -a -v --type install Oka\ Mirror\ Audio\ Driver.pkg
-Oka Mirror Audio Driver.pkg: accepted
+Omi Mirror Audio Driver.pkg: accepted
 source=Notarized Developer ID
 ➜  Notarizition
 
@@ -119,7 +122,3 @@ source=Notarized Developer ID
 Reference:
 https://www.jianshu.com/p/a1a672b49d78
 https://forums.developer.apple.com/thread/115657
-
-
-
-
