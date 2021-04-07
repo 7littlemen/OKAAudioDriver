@@ -7,7 +7,7 @@ https://help.apple.com/xcode/mac/current/#/deve51ce7c3d
 
 security find-identity
 
-codesign -s "Developer ID Application: Chenghao Wu (UFC6W2DD6Z)" --timestamp -o runtime -f Omi\ Mirror\ Audio\ Driver.driver/Contents/MacOS/Omi\ Mirror\ Audio\ Driver Omi\ Mirror\ Audio\ Driver.driver/Contents/MacOS/Omi\ Mirror\ Audio\ Driver
+codesign -s "Developer ID Application: Omi Software Studio Inc. (W6TYCWRYPK)" --timestamp -o runtime -f Omi\ Mirror\ Audio\ Driver.driver/Contents/MacOS/Omi\ Mirror\ Audio\ Driver Omi\ Mirror\ Audio\ Driver.driver/Contents/MacOS/Omi\ Mirror\ Audio\ Driver
 
 检查签名
 codesign -dvvv Omi\ Mirror\ Audio\ Driver.driver/Contents/MacOS/Omi\ Mirror\ Audio\ Driver
@@ -21,7 +21,7 @@ New Folder: Library/Audio/Plug-Ins/HAL, 添加build出来签过名driver文件�
 cmd + B 编译出pkg文件
 
 4. 给pkg签名(使用Developer ID Installer certificate)
-productsign --sign "Developer ID Installer: Chenghao Wu (UFC6W2DD6Z)" Omi\ Mirror\ Audio\ Driver/Omi\ Mirror\ Audio\ Driver.pkg Notarization/Omi\ Mirror\ Audio\ Driver.pkg
+productsign --sign "Developer ID Installer: Omi Software Studio Inc. (W6TYCWRYPK)" Omi\ Mirror\ Audio\ Driver/Omi\ Mirror\ Audio\ Driver.pkg Notarization/Omi\ Mirror\ Audio\ Driver.pkg
 
 检查签名
 pkgutil --check-signature Notarization/Omi\ Mirror\ Audio\ Driver.pkg
@@ -29,10 +29,10 @@ pkgutil --check-signature Notarization/Omi\ Mirror\ Audio\ Driver.pkg
 5. notarize pkg
 https://developer.apple.com/documentation/xcode/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow?language=objc
 
-xcrun altool --notarize-app --primary-bundle-id "audio.existential.OmiMirrorAudioDriver" --username "772387860@qq.com" --password "wafz-hdsp-lzsh-skss" --file Notarization/Omi\ Mirror\ Audio\ Driver.pkg  &> tmp
+xcrun altool --notarize-app --primary-bundle-id "audio.existential.OmiMirrorAudioDriver" --username "omnisoftware9527@gmail.com" --password "emyr-yono-nano-mhjl" --file Notarization/Omi\ Mirror\ Audio\ Driver.pkg  &> tmp
 
 检查
-xcrun altool --notarization-history 0 -u "772387860@qq.com" -p "wafz-hdsp-lzsh-skss"
+xcrun altool --notarization-history 0 -u "omnisoftware9527@gmail.com" -p "emyr-yono-nano-mhjl"
 
 6.Staple the Ticket to pkg
 xcrun stapler staple Notarization/Omi\ Mirror\ Audio\ Driver.pkg

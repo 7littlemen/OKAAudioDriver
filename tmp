@@ -1,5 +1,5 @@
-2021-04-02 15:05:58.863 altool[14507:319607] CFURLRequestSetHTTPCookieStorageAcceptPolicy_block_invoke: no longer implemented and should not be called
+2021-04-07 11:38:35.177 altool[28148:713464] CFURLRequestSetHTTPCookieStorageAcceptPolicy_block_invoke: no longer implemented and should not be called
 No errors uploading 'Notarization/Omi Mirror Audio Driver.pkg'.
-RequestUUID = 7c115cd6-0dd5-4187-8b7a-61d36e6472b7
+RequestUUID = 5dd33d7f-c32b-4aba-9f82-7afc1fa394c5
 
 
