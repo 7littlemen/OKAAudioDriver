@@ -12,7 +12,7 @@
 			<key>PACKAGE_FILES</key>
 			<dict>
 				<key>DEFAULT_INSTALL_LOCATION</key>
-				<string>/Library/Audio</string>
+				<string>/Library/Audio/Plug-Ins/HAL</string>
 				<key>HIERARCHY</key>
 				<dict>
 					<key>CHILDREN</key>
@@ -558,7 +558,7 @@
 			<key>TYPE</key>
 			<integer>0</integer>
 			<key>UUID</key>
-			<string>C68D2759-BD28-497D-8124-A60C322D068B</string>
+			<string>7B152380-7C15-4317-A32B-6DD76C27F523</string>
 		</dict>
 	</array>
 	<key>PROJECT</key>
